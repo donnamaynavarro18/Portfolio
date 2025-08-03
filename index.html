@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donna May Navarro's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      /* Nude gradient background */
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #e3bc9a 0%,
+          #e5d2c4 100%
+        );
+      }
+      .section-title {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+      .section-title:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 4px;
+        bottom: -10px;
+        left: 0;
+        background: linear-gradient(
+          90deg,
+          #e3bc9a 0%,
+          #e5d2c4 100%
+        );
+        border-radius: 2px;
+      }
+      .skill-pill {
+        background-color: #f3e8dc;
+        color: #a67c52;
+        transition: all 0.3s ease;
+      }
+      .skill-pill:hover {
+        background-color: #a67c52;
+        color: white;
+        transform: translateY(-2px);
+      }
+      .tool-icon {
+        transition: all 0.3s ease;
+        color: #a67c52;
+      }
+      .tool-icon:hover {
+        transform: scale(1.1);
+        color: #e3bc9a;
+      }
+      a.bg-white.text-blue-600,
+      a.bg-white.text-blue-600:hover {
+        color: #a67c52;
+      }
+      a.bg-white.text-blue-600:hover {
+        background-color: #f3e8dc;
+      }
+      a.gradient-bg.text-white {
+        background: linear-gradient(
+          135deg,
+          #e3bc9a 0%,
+          #e5d2c4 100%
+        );
+        color: white;
+      }
+      a.gradient-bg.text-white:hover {
+        box-shadow: 0 4px 15px rgba(227, 188, 154, 0.6);
+      }
+      a.bg-white.text-blue-600.border.border-blue-600:hover {
+        background-color: #f3e8dc;
+        border-color: #a67c52;
+        color: #a67c52;
+      }
+      footer a.text-gray-600:hover {
+        color: #a67c52;
+      }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div
+              class="w-32 h-32 mx-auto mb-6 rounded-full bg-white flex items-center justify-center overflow-hidden border-4 border-white shadow-lg"
+            >
+                <!-- Replace the src URL below with your preferred profile photo URL -->
+                <img
+                  src="WhatsApp Image 2025-06-18 at 20.34.44_18a178a8.jpg"
+                  alt="Professional portrait of Donna May D. Navarro"
+                  class="w-full h-full object-cover"
+                />
+            </div>
+            <h1 class="text-4xl font-bold mb-2">Donna May D. Navarro</h1>
+            <p class="text-xl mb-6 opacity-90">
+              Customer Service & Quality Assurance Specialist
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a
+                  href="mailto:navarrodm659@gmail.com"
+                  class="bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-50 transition"
+                >
+                    <i class="fas fa-envelope mr-2"></i>Contact Me
+                </a>
+                <a
+                  href="tel:09553782142"
+                  class="bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-50 transition"
+                >
+                    <i class="fas fa-phone-alt mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <!-- About Section -->
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold">About Me</h2>
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <p class="text-lg leading-relaxed">
+                    Motivated and adaptable professional with over 6 years of experience in customer service, quality assurance, and client support. Skilled in handling customer concerns, analyzing performance, and improving service quality. Known for being reliable, detail-oriented, and a strong team player. Open to new challenges and excited to grow with a company that values dedication and great service.
+                </p>
+                <div class="mt-6 grid grid-cols-2 gap-4">
+                    <div>
+                        <p class="font-semibold">
+                          <i class="fas fa-map-marker-alt mr-2 text-blue-500"></i>Location
+                        </p>
+                        <p>
+                          Block 3 Lot 35 Unit A, St. Pauline Homes Deparo Barangay 168 Caloocan City
+                        </p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">
+                          <i class="fas fa-envelope mr-2 text-blue-500"></i>Email
+                        </p>
+                        <p>navarrodm659@gmail.com</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">
+                          <i class="fas fa-phone-alt mr-2 text-blue-500"></i>Phone
+                        </p>
+                        <p>0955 - 378 - 2142</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Work Experience</h2>
+            <div class="space-y-6">
+                <!-- Experience 1 -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex flex-col sm:flex-row sm:justify-between">
+                        <h3 class="text-xl font-bold">Client Support Specialist</h3>
+                        <span class="text-blue-600 font-medium">November 2024 – Present</span>
+                    </div>
+                    <p class="text-lg font-medium text-gray-700 mb-4">Pat Dogs Australia</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>
+                          Validate all client information, including application forms, valid IDs, medical certificates, and veterinary documents for their dogs.
+                        </li>
+                        <li>
+                          Assist clients in finding accredited trainers in their area under our organization.
+                        </li>
+                        <li>
+                          Review assessment videos to evaluate dog performance and identify areas for improvement.
+                        </li>
+                        <li>
+                          Facilitate the registration of assistance dogs with local councils and for public transportation access once clients pass the assessment.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex flex-col sm:flex-row sm:justify-between">
+                        <h3 class="text-xl font-bold">Quality Analyst</h3>
+                        <span class="text-blue-600 font-medium">April 2022 – November 2024</span>
+                    </div>
+                    <p class="text-lg font-medium text-gray-700 mb-4">Afni</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>
+                          Conducted in-depth evaluations of customer interactions, ensuring adherence to quality standards and process guidelines.
+                        </li>
+                        <li>
+                          Analyzed performance metrics and trends, delivering insights and reports to management for decision-making.
+                        </li>
+                        <li>
+                          Led regular quality audits to maintain compliance and continuously improve service delivery.
+                        </li>
+                        <li>
+                          Collaborated with team leaders to coach agents based on quality results and improve KPIs.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex flex-col sm:flex-row sm:justify-between">
+                        <h3 class="text-xl font-bold">Customer/Technical Care Representative</h3>
+                        <span class="text-blue-600 font-medium">October 2021 – April 2022</span>
+                    </div>
+                    <p class="text-lg font-medium text-gray-700 mb-4">Concentrix</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>
+                          Provided support to customers via phone and email, resolving technical and account-related issues.
+                        </li>
+                        <li>
+                          Maintained a professional and empathetic approach to ensure high customer satisfaction.
+                        </li>
+                        <li>
+                          Assisted with troubleshooting technical problems related to products and services.
+                        </li>
+                        <li>
+                          Handled a variety of customer concerns with efficiency and care.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <div class="flex flex-col sm:flex-row sm:justify-between">
+                        <h3 class="text-xl font-bold">Customer/Technical Care Representative</h3>
+                        <span class="text-blue-600 font-medium">July 2019 – October 2021</span>
+                    </div>
+                    <p class="text-lg font-medium text-gray-700 mb-4">Results CX</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>
+                          Handled high-volume incoming calls, identifying customer needs and offering timely solutions.
+                        </li>
+                        <li>
+                          Built strong customer relationships through effective and friendly communication.
+                        </li>
+                        <li>
+                          Diagnosed software/hardware and network connectivity issues for resolution.
+                        </li>
+                        <li>
+                          Supported customers with troubleshooting procedures, ensuring a smooth experience.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Skills & Abilities</h2>
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Professional Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Customer Service & Support</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Quality Assurance & Call Evaluation</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Technical Troubleshooting</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Analytical & Critical Thinking</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Strong Communication</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Adaptability & Flexibility</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Time Management</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Attention to Detail</span
+                            >
+                            <span class="skill-pill px-4 py-2 rounded-full text-sm font-medium"
+                              >Data Analysis & Reporting</span
+                            >
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Software & Tools</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="text-center tool-icon">
+                                <i class="fab fa-microsoft text-3xl mb-1" title="Microsoft Office Suite"></i>
+                                <p class="text-sm">Microsoft</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-envelope-open-text text-3xl mb-1" title="Outlook"></i>
+                                <p class="text-sm">Outlook</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-file-excel text-3xl mb-1" title="Excel"></i>
+                                <p class="text-sm">Excel</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-users text-3xl mb-1" title="Teams"></i>
+                                <p class="text-sm">Teams</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fab fa-slack text-3xl mb-1" title="Slack"></i>
+                                <p class="text-sm">Slack</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-video text-3xl mb-1" title="Webex"></i>
+                                <p class="text-sm">Webex</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-share-alt text-3xl mb-1" title="SharePoint"></i>
+                                <p class="text-sm">SharePoint</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-cloud text-3xl mb-1" title="NextCloud"></i>
+                                <p class="text-sm">NextCloud</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fab fa-google-drive text-3xl mb-1" title="Google Drive"></i>
+                                <p class="text-sm">Drive</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-table text-3xl mb-1" title="Google Sheets"></i>
+                                <p class="text-sm">Sheets</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-phone-alt text-3xl mb-1" title="Ooma"></i>
+                                <p class="text-sm">Ooma</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-user-nurse text-3xl mb-1" title="Axis Care"></i>
+                                <p class="text-sm">Axis Care</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-chart-line text-3xl mb-1" title="Tableau"></i>
+                                <p class="text-sm">Tableau</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-desktop text-3xl mb-1" title="Citrix"></i>
+                                <p class="text-sm">Citrix</p>
+                            </div>
+                            <div class="text-center tool-icon">
+                                <i class="fas fa-clock text-3xl mb-1" title="Hubstaff"></i>
+                                <p class="text-sm">Hubstaff</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-16">
+            <h2 class="section-title text-3xl font-bold">Education</h2>
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold">Maligaya National High School</h3>
+                    <p class="text-gray-700">High School Graduate, 2011 - 2014</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold">Fairview Elementary School</h3>
+                    <p class="text-gray-700">Primary Level, 2005 - 2011</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+          <h2 class="section-title text-3xl font-bold">What I Can Offer</h2>
+          <div class="bg-white rounded-xl shadow-md p-6 space-y-6">
+            <div>
+              <h3 class="text-xl font-bold mb-2">Customer Experience Support</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Frontline customer service through chat, email, and phone</li>
+                <li>Empathetic and solution-oriented communication</li>
+                <li>Resolving inquiries related to accounts, billing, or basic tech troubleshooting</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Quality Assurance & Monitoring</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Performance reviews and evaluations</li>
+                <li>Creating QA reports and coaching documentation</li>
+                <li>Suggesting process improvements and identifying agent training needs</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Technical & Admin Support</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Platform or tool navigation assistance</li>
+                <li>Troubleshooting common user issues (especially for SaaS platforms)</li>
+                <li>Data entry, form validation, and backend support tasks</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold mb-2">Remote Team Collaboration</h3>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Clear communicator and active team contributor</li>
+                <li>Reliable and disciplined in remote work environments</li>
+                <li>Comfortable with productivity tools, CRMs, and communication platforms</li>
+              </ul>
+            </div>
+            <p class="mt-4">
+              I’m confident in my ability to adapt quickly to new systems, learn fast, and bring value to any client or team I join.
+            </p>
+          </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="text-center">
+            <h2 class="text-2xl font-bold mb-6">Let's Work Together</h2>
+            <p class="mb-8">
+              I'm open to new opportunities and would love to discuss how I can contribute to your team.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a
+                  href="mailto:navarrodm659@gmail.com"
+                  class="gradient-bg text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition"
+                >
+                    <i class="fas fa-envelope mr-2"></i>Email Me
+                </a>
+                <a
+                  href="tel:09553782142"
+                  class="bg-white text-blue-600 px-8 py-3 rounded-full font-bold border border-blue-600 hover:bg-blue-50 transition"
+                >
+                    <i class="fas fa-phone-alt mr-2"></i>Call Me
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-8 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/donna-may-navarro-772034329" class="text-gray-600 hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="https://www.facebook.com/donnamay.navarro" class="text-gray-600 hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a href="https://wa.me/639537126627" class="text-gray-600 hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-500">© 2024 Donna May D. Navarro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+      // Simple script for smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+          });
+        });
+      });
+    </script>
+</body>
+</html>
